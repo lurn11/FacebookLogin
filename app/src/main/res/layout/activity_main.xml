@@ -7,11 +7,29 @@
     tools:context="com.example.laurenvoigt.facebooklogin.MainActivity">
 
     <TextView
-        android:id="@+id/txtStatus"
+        android:id="@+id/userName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Hello World"/>
+        android:text="Username here"/>
+
+    <TextView
+        android:id="@+id/userId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="43dp"
+        android:text="UserId here" />
+
+    <com.facebook.login.widget.ProfilePictureView
+        android:id="@+id/picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userName"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="29dp" />
 
     <com.facebook.login.widget.LoginButton
         android:id="@+id/login_button"
